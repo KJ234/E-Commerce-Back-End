@@ -46,16 +46,14 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
   // create a new category
-  router.post("/", (req, res) => {
-    Category.create(req.body)
-      .then((data) => {
-        res.json(data);
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
-  });
+  Category.create(req.body)
+    .then((data) => {
+      res.json(data);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
 });
 
 router.put("/:id", (req, res) => {
@@ -75,21 +73,19 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  // delete a category by its `id` value
-  router.delete("/:id", (req, res) => {
-    Category.destroy({
-      where: {
-        id: req.params.id,
-      },
+  // delete a category by its `id` valu
+  Category.destroy({
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((data) => {
+      res.json(data);
     })
-      .then((data) => {
-        res.json(data);
-      })
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
-  });
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
 });
 
 module.exports = router;
