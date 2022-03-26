@@ -19,6 +19,15 @@ Run npm i and npm run seed to run the database. A user can clone this from my re
 
 ## Usage
 
+
+https://user-images.githubusercontent.com/95283510/160242367-9b5b4687-da02-4e6e-ac9f-cf6c8bd3a15c.mp4
+
+
+
+https://user-images.githubusercontent.com/95283510/160242378-41dc015e-f5a2-4cc9-b0ca-aec2119202a8.mp4
+
+
+
 ## Credits
 
 No other collaborators for this project
